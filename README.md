@@ -1,5 +1,5 @@
 # Netlify ngrok Proxy
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/084726a5-3a50-4989-8246-94b1093c5901/deploy-status)](https://app.netlify.com/projects/teal-pegasus-2cdc7c/deploys)
 這個專案讓你能在 Netlify Functions 上建立中介代理（proxy），
 自動加上必要的 HTTP 標頭來繞過 ngrok 免費版的警告頁面，
 並同時支援 Message API / Webhook 回呼。
