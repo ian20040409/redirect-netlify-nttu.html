@@ -1,0 +1,9 @@
+[build]
+  functions = "netlify/functions"
+
+# 把網站根路徑改寫到 Function（200 rewrite）
+# 這樣使用者開你的 Netlify 網址就會由 Function 代理到 ngrok
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/proxy"
+  status = 200
