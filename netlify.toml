@@ -1,0 +1,14 @@
+[build]
+  functions = "netlify/functions"
+
+# /callback 經由代理 function，保留 Netlify 網域
+[[redirects]]
+  from = "/callback"
+  to = "/.netlify/functions/proxy"
+  status = 200
+
+# 其他所有路徑仍照常代理
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/proxy"
+  status = 200
